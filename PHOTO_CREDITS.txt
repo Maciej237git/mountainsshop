@@ -1,0 +1,17 @@
+PHOTO CREDITS / PUBLICATION STATUS
+
+Photos supplied on the existing Mountain Style Shops website:
+- store-hero.jpg, shop-interior.jpg, accessories.jpg, keepsakes.jpg
+  Source: https://mountainstyleshops.com/
+
+Customer photos from public Google Maps reviews (permission for public reuse not verified):
+- review-mug.jpg — Odd Frequency, Mountain Style
+- review-simply-1.jpg — Arantza Micarelli, Simply Breck
+- review-simply-2.jpg and review-simply-3.jpg — Leah Barriga, Simply Breck
+  Store listings: https://www.google.com/maps/search/?api=1&query=Mountain+Style+111+S+Main+St+Breckenridge
+  https://www.google.com/maps/search/?api=1&query=Simply+Breck+109+N+Main+St+Breckenridge
+
+Business listing photo (permission for public reuse not verified):
+- style-storefront.jpg — Mountain Style Google Maps business listing
+
+Original shop logos appear in assets/. Confirm usage rights with the business owner before publishing.
