@@ -64,7 +64,6 @@ VIBE_UUID = [
 
 SIMPLY_UUID = [
     "a8612aa1-0c48-475a-bb56-13a97d39713a",
-    "df87a1f2-0975-4e37-bb0a-28b178a9f71e",
     "41127e1e-34a3-4c5c-ab43-23bc261526f7",
     "80cb43a3-76f5-49c3-8c61-7b2819a7de9b",
     "ca4a69b6-6794-4083-a3a8-9ec7ca5bc301",
