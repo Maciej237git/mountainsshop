@@ -88,8 +88,7 @@ def main():
         ("photo-storefront-ms.webp", "style-04.webp"),
         ("shop-concept.webp", "concept-01.webp"),
         ("photo-concept-street.webp", "concept-02.webp"),
-        ("photo-globes.webp", "concept-03.webp"),
-        ("photo-souvenirs.webp", "concept-04.webp"),
+        ("bottom-main-street.webp", "concept-03.webp"),
     ]:
         copy_existing(rel, name)
 
