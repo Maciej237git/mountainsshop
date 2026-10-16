@@ -74,22 +74,23 @@ SIMPLY_UUID = [
     "aa2a23d7-c367-4767-8453-a7f038247a9e",
 ]
 
-# Mountain Style — second exterior (window display, not duplicate sign)
+# Mountain Style: 2 exteriors + varied interiors (no people)
 STYLE_EXTERIOR_02_UUID = "afecb6f9-2fb4-402d-a9be-0952e5515977"
-
-# Mountain Style interiors — no people (from iCloud 2)
 STYLE_INTERIOR_UUID = [
-    "5310c13f-8fe6-4f5e-aee6-cc0b8c378748",
-    "636619d2-6e7d-475c-9e1e-1987c2955eed",
-    "3c78d788-334a-4e58-b82a-c6f41997a64c",
-    "3bb7caac-f0e2-4e48-8b3c-c18528aada90",
+    "5310c13f-8fe6-4f5e-aee6-cc0b8c378748",  # plush & books
+    "636619d2-6e7d-475c-9e1e-1987c2955eed",  # mugs
+    "5ad04c29-f682-48e7-862b-98bb4dedabbe",  # bear caps
+    "424fbf8e-eed9-446f-aab2-a82c7e55f9b5",  # Colorado socks
+    "8124cb28-ac38-46fa-8c17-62e0c0bc026f",  # Breck apparel by the door
 ]
 
-# Colorado Concept interiors — no people (from iCloud 2)
+# Colorado Concept: 1 exterior + gift-shop interiors (no people)
 CONCEPT_INTERIOR_UUID = [
-    "8cc1924e-8249-46fc-9169-8dc3d496b475",
-    "552ab929-fd44-4a2c-b6b3-4b75fbd2aada",
-    "c85b289f-9eb9-496d-bc35-f1b2500ec663",
+    "8cc1924e-8249-46fc-9169-8dc3d496b475",  # camper globes
+    "552ab929-fd44-4a2c-b6b3-4b75fbd2aada",  # hip flasks
+    "c85b289f-9eb9-496d-bc35-f1b2500ec663",  # hoodies
+    "2e274fdb-e1d8-46e6-b0a8-217cefa4563f",  # stemless glasses
+    "168c567a-0297-4c28-9eac-120844147af6",  # BRECK tees on rack
 ]
 
 
@@ -112,20 +113,14 @@ def main():
     else:
         ASSETS.mkdir(parents=True)
 
-    for rel, name in [
-        ("shop-style.webp", "style-01.webp"),
-        ("style-storefront.webp", "style-03.webp"),
-        ("photo-storefront-ms.webp", "style-04.webp"),
-        ("shop-concept.webp", "concept-01.webp"),
-        ("photo-concept-street.webp", "concept-02.webp"),
-        ("bottom-main-street.webp", "concept-03.webp"),
-    ]:
-        copy_existing(rel, name)
+    copy_existing("shop-style.webp", "style-01.webp")
+    copy_existing("style-storefront.webp", "style-03.webp")
+    copy_existing("shop-concept.webp", "concept-01.webp")
 
     inner2 = icloud2_inner()
     from_icloud(inner2, [STYLE_EXTERIOR_02_UUID], "style", start_index=2)
-    from_icloud(inner2, STYLE_INTERIOR_UUID, "style", start_index=5)
-    from_icloud(inner2, CONCEPT_INTERIOR_UUID, "concept", start_index=4)
+    from_icloud(inner2, STYLE_INTERIOR_UUID, "style", start_index=4)
+    from_icloud(inner2, CONCEPT_INTERIOR_UUID, "concept", start_index=2)
 
     inner3 = icloud3_inner()
     from_icloud(inner3, VIBE_UUID, "vibe")
