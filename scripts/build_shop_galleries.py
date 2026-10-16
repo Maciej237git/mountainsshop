@@ -74,6 +74,9 @@ SIMPLY_UUID = [
     "aa2a23d7-c367-4767-8453-a7f038247a9e",
 ]
 
+# Mountain Style — second exterior (window display, not duplicate sign)
+STYLE_EXTERIOR_02_UUID = "afecb6f9-2fb4-402d-a9be-0952e5515977"
+
 # Mountain Style interiors — no people (from iCloud 2)
 STYLE_INTERIOR_UUID = [
     "5310c13f-8fe6-4f5e-aee6-cc0b8c378748",
@@ -111,7 +114,6 @@ def main():
 
     for rel, name in [
         ("shop-style.webp", "style-01.webp"),
-        ("photo-sign-ms.webp", "style-02.webp"),
         ("style-storefront.webp", "style-03.webp"),
         ("photo-storefront-ms.webp", "style-04.webp"),
         ("shop-concept.webp", "concept-01.webp"),
@@ -121,6 +123,7 @@ def main():
         copy_existing(rel, name)
 
     inner2 = icloud2_inner()
+    from_icloud(inner2, [STYLE_EXTERIOR_02_UUID], "style", start_index=2)
     from_icloud(inner2, STYLE_INTERIOR_UUID, "style", start_index=5)
     from_icloud(inner2, CONCEPT_INTERIOR_UUID, "concept", start_index=4)
 
