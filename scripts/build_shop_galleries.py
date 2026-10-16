@@ -86,7 +86,7 @@ STYLE_INTERIOR_UUID = [
 CONCEPT_INTERIOR_UUID = [
     "8cc1924e-8249-46fc-9169-8dc3d496b475",
     "552ab929-fd44-4a2c-b6b3-4b75fbd2aada",
-    "c20692b7-fe9f-45f2-82eb-dae1fd634bcf",
+    "c85b289f-9eb9-496d-bc35-f1b2500ec663",
 ]
 
 
